@@ -64,6 +64,13 @@ th, td {
     justify-content: space-evenly;
 }
 
+.justify-content-flexend{
+    justify-content: flex-end;
+}
+
+.justify-content-center{
+    justify-content: center;
+}
 
 .d-flex{
     display: flex;
@@ -87,6 +94,43 @@ th, td {
     margin-top: 15px;
 }
 
+.py-10 {
+    padding: 10px 0; 
+}
 
+.px-10 {
+    padding: 0 10px; 
+}
+
+.gap-10{
+    gap: 10px;
+}
+
+
+/* Form */
+.modal-box {
+    background: white;
+    padding: 25px;
+    border-radius: 8px;
+    width: 100%;
+    max-width: 450px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+    transform: scale(0.8);
+    transition: all 0.3s ease;
+    margin: auto;
+}
+
+.form-group{
+    display: flex;
+    flex-direction: column;
+}
+
+#btn-cancel{
+    width: 50%;
+}
+
+.btn-success{
+    width: 50%;
+}
 
 
