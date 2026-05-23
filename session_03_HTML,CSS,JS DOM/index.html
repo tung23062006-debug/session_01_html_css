@@ -27,7 +27,7 @@
                 </thead>
 
                 <tbody id="table-body">
-                    <tr>
+                    <!-- <tr>
                         <td>SV001</td>
                         <td>Nguyễn Văn Anh</td>
                         <td>2004-05-15</td>
@@ -86,7 +86,7 @@
                             <button class="btn bg-grey">Sửa</button>
                             <button class="btn bg bg-red">Xóa</button>
                         </td>
-                    </tr>
+                    </tr> -->
                 </tbody>
             </table>
 
@@ -97,11 +97,11 @@
             <div class="d-flex justify-content-evenly mt-15">
                 <div class="box text-center">
                     <h3>Tổng số</h3>
-                    <p>5</p>
+                    <p id="total-students"></p>
                 </div>
                 <div class="box text-center">
                     <h3>Điểm TB</h3>
-                    <p>8.6</p>
+                    <p id="average-gpa"></p>
                 </div>
             </div>
         </div>
@@ -116,27 +116,33 @@
                 </div>
                 <div class="form-group mb-15">
                     <label class="mb-15">Mã sinh viên:</label>
-                    <input type="text" class="py-10" placeholder="Ví dụ: SV006">
+                    <input type="text" class="msv py-10" placeholder="Ví dụ: SV006">
+                    <div class="error-msv"></div>
                 </div>
                 <div class="form-group mb-15">
                     <label class="mb-15">Họ và tên:</label>
-                    <input type="text" class="py-10" placeholder="Nhập họ tên">
+                    <input type="text" class="name py-10" placeholder="Nhập họ tên">
+                    <div class="error-name"></div>
                 </div>
                 <div class="form-group mb-15">
                     <label class="mb-15">Ngày sinh:</label>
-                    <input type="date" class="py-10">
+                    <input type="date" class="date py-10">
+                    <div class="error-date"></div>
                 </div>
                 <div class="form-group mb-15">
                     <label class="mb-15">Lớp học:</label>
-                    <input type="text" class="py-10" placeholder="Ví dụ: 66ĐHTT">
+                    <input type="text" class="class-name py-10" placeholder="Ví dụ: 66ĐHTT">
+                    <div class="error-class"></div>
                 </div>
                 <div class="form-group mb-15">
                     <label class="mb-15">Điểm trung bình:</label>
-                    <input type="number" class="py-10" min="0" max="10" step="0.1" required placeholder="Ví dụ: 8.0">
+                    <input type="number" class="dtb py-10" min="0" max="10" step="0.1" required placeholder="Ví dụ: 8.0">
+                    <div class="error-dtb"></div>
                 </div>
                 <div class="form-group mb-15">
                     <label class="mb-15">Email:</label>
-                    <input type="email" class="py-10" required placeholder="nguyenvan@gmail.com">
+                    <input type="email" class="email py-10" required placeholder="nguyenvan@gmail.com">
+                    <div class="error-email"></div>
                 </div>
                 <div class="form-actions mb-15 d-flex justify-content-center gap-10">
                     <button type="button" id="btn-cancel" class="btn btn-secondary bg-red">Hủy bỏ</button>
