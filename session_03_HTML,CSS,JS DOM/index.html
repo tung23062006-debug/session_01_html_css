@@ -90,7 +90,7 @@
                 </tbody>
             </table>
 
-            <div class="btn-them ">
+            <div class="btn-them">
                 <button class="btn bg-green mt-15">Thêm sinh viên</button>
             </div>
 
@@ -107,39 +107,46 @@
         </div>
     </div>
 
-    <div class="modal-box">
-        <form id="student-form">
-            <h2 class="mb-15">Thêm Sinh Viên Mới</h2>
-            <div class="form-group mb-15">
-                <label class="mb-15">Mã sinh viên:</label>
-                <input type="text" class="py-10" placeholder="Ví dụ: SV006">
-            </div>
-            <div class="form-group mb-15">
-                <label class="mb-15">Họ và tên:</label>
-                <input type="text" class="py-10" placeholder="Nhập họ tên">
-            </div>
-            <div class="form-group mb-15">
-                <label class="mb-15">Ngày sinh:</label>
-                <input type="date" class="py-10">
-            </div>
-            <div class="form-group mb-15">
-                <label class="mb-15">Lớp học:</label>
-                <input type="text" class="py-10" placeholder="Ví dụ: 66ĐHTT">
-            </div>
-            <div class="form-group mb-15">
-                <label class="mb-15">Điểm trung bình:</label>
-                <input type="number" class="py-10" min="0" max="10" step="0.1" required placeholder="Ví dụ: 8.0">
-            </div>
-            <div class="form-group mb-15">
-                <label class="mb-15">Email:</label>
-                <input type="email"class="py-10" required placeholder="nguyenvan@gmail.com">
-            </div>
-            <div class="form-actions mb-15 d-flex justify-content-center gap-10">
-                <button type="button" id="btn-cancel" class="btn btn-secondary bg-red">Hủy bỏ</button>
-                <button type="submit" class=" btn btn-success bg-green">Lưu lại</button>
-            </div>
-        </form>
+    <div id="form-modal" class="modal-overlay">
+        <div class="modal-box">
+            <form id="student-form">
+                <div class="d-flex justify-content-between">
+                    <h2 class="mb-15">Thêm Sinh Viên Mới</h2>
+                    <button class="btn-close py-10 px-10">X</button>
+                </div>
+                <div class="form-group mb-15">
+                    <label class="mb-15">Mã sinh viên:</label>
+                    <input type="text" class="py-10" placeholder="Ví dụ: SV006">
+                </div>
+                <div class="form-group mb-15">
+                    <label class="mb-15">Họ và tên:</label>
+                    <input type="text" class="py-10" placeholder="Nhập họ tên">
+                </div>
+                <div class="form-group mb-15">
+                    <label class="mb-15">Ngày sinh:</label>
+                    <input type="date" class="py-10">
+                </div>
+                <div class="form-group mb-15">
+                    <label class="mb-15">Lớp học:</label>
+                    <input type="text" class="py-10" placeholder="Ví dụ: 66ĐHTT">
+                </div>
+                <div class="form-group mb-15">
+                    <label class="mb-15">Điểm trung bình:</label>
+                    <input type="number" class="py-10" min="0" max="10" step="0.1" required placeholder="Ví dụ: 8.0">
+                </div>
+                <div class="form-group mb-15">
+                    <label class="mb-15">Email:</label>
+                    <input type="email" class="py-10" required placeholder="nguyenvan@gmail.com">
+                </div>
+                <div class="form-actions mb-15 d-flex justify-content-center gap-10">
+                    <button type="button" id="btn-cancel" class="btn btn-secondary bg-red">Hủy bỏ</button>
+                    <button type="submit" class=" btn btn-success bg-green">Lưu lại</button>
+                </div>
+            </form>
+        </div>
     </div>
+
+    <script src="/session_03_HTML,CSS,JS DOM/main.js"></script>
 
 </body>
 
