@@ -6,7 +6,10 @@ import UserProfile from "./profile";
 import ProductInfo from "./ProductInfo";
 import SimpleVariables from "./SimpleVariables";
 import ListRendering from "./ListRendering";
-import ConditionalChallenge from "./ConditionalChallenge"
+import ConditionalChallenge from "./ConditionalChallenge";
+import StringState from "./StringState";
+import BooleanState from "./BooleanState";
+import MultipleStates from "./MultipleStates";
 
 function App() {
   const products = [
@@ -31,7 +34,6 @@ function App() {
           ))}
         </div>
 
-        {/* THỬ THÁCH 3: HIỂN THỊ 3 USER CARD VỚI PRICE TAG VỪA TÁCH  */}
         <h2 style={{ textAlign: "center", color: "#2c3e50", marginTop: "40px" }}>👥 Khách hàng thành viên</h2>
         <div style={{ display: "flex", justifyContent: "center", gap: "20px", flexWrap: "wrap" }}>
           <UserCard
@@ -64,6 +66,9 @@ function App() {
           <SimpleVariables />
           <ListRendering />
           <ConditionalChallenge />
+          <StringState />
+          <BooleanState />
+          <MultipleStates />
         </div>
       </main>
       <Footer />
