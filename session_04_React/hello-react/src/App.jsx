@@ -10,6 +10,10 @@ import ConditionalChallenge from "./ConditionalChallenge";
 import StringState from "./StringState";
 import BooleanState from "./BooleanState";
 import MultipleStates from "./MultipleStates";
+import ClickEvents from "./ClickEvents";
+import InputEvents from "./InputEvents";
+import KeyboardEvents from "./KeyboardEvents";
+import FormEvents from "./FormEvents";
 
 function App() {
   const products = [
@@ -69,6 +73,10 @@ function App() {
           <StringState />
           <BooleanState />
           <MultipleStates />
+          <ClickEvents />
+          <InputEvents />
+          <KeyboardEvents />
+          <FormEvents />
         </div>
       </main>
       <Footer />
