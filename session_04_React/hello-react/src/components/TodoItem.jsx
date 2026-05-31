@@ -1,0 +1,46 @@
+import { useState } from "react";
+
+function TodoItem({ todo, onToggle, onDelete }) {
+    return (
+        <div style={{
+            display: "flex",
+            alignItems: "center",
+            padding: "12px",
+            margin: "5px 0",
+            background: todo.done ? "#f0fff0" : "#fff",
+            border: "1px solid #eee",
+            borderRadius: "4px"
+        }}>
+            <input
+                type="checkbox"
+                checked={todo.done}
+                onChange={() => onToggle(todo.id)}
+                style={{ marginRight: "10px", width: "16px", height: "16px", cursor: "pointer" }}
+            />
+            <span style={{
+                flex: 1,
+                textDecoration: todo.done ? "line-through" : "none",
+                color: todo.done ? "#999" : "#333",
+                fontStyle: todo.done ? "italic" : "normal"
+            }}>
+                {todo.text}
+            </span>
+            <button
+                onClick={() => onDelete(todo.id)}
+                style={{
+                    background: "#e74c3c",
+                    color: "white",
+                    border: "none",
+                    padding: "5px 10px",
+                    borderRadius: "4px",
+                    cursor: "pointer",
+                    fontWeight: "bold"
+                }}
+            >
+                🗑
+            </button>
+        </div>
+    );
+}
+
+export default TodoItem;
