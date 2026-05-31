@@ -14,6 +14,10 @@ import ClickEvents from "./ClickEvents";
 import InputEvents from "./InputEvents";
 import KeyboardEvents from "./KeyboardEvents";
 import FormEvents from "./FormEvents";
+import ListBasics from "./ListBasics";
+import CreateItem from "./CreateItem";
+import DeleteItem from "./DeleteItem";
+import UpdateItem from "./UpdateItem";
 
 function App() {
   const products = [
@@ -77,6 +81,10 @@ function App() {
           <InputEvents />
           <KeyboardEvents />
           <FormEvents />
+          <ListBasics />
+          <CreateItem />
+          <DeleteItem />
+          <UpdateItem />
         </div>
       </main>
       <Footer />
